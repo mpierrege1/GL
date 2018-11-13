@@ -1,0 +1,51 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "main.c" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src" ;
+LOCATE on "my_header.h" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\include" ;
+LOCATE on "TP_lib.c" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src" ;
+LOCATE on "TP_lib.h" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\include" ;
+Object "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\main.c" ;
+FILENUM on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj" = 1 ;
+DEFPROTS on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj.cvidefprots" ;
+OUTFILE on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj.out" ;
+PrjObjects += "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\main.obj" ;
+Object "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\TP_lib.c" ;
+FILENUM on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj" = 2 ;
+DEFPROTS on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj.cvidefprots" ;
+OUTFILE on "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj" = "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj.out" ;
+PrjObjects += "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\TP_lib.obj" ;
+Object "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\resources.res" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\resources.in.rc" ;
+Depends "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\resources.res" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\manifest.xml" ;
+MainFromObjects "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\exo44.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\exo44.exe" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\link_options.txt" ;
+Depends "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\exo44.exe" : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\resources.res" ;
+Depends all : "d:\\Download folder\\GL-Exo44\\GL-Exo44\\src\\cvibuild.exo44\\Debug\\exo44.exe" ;
