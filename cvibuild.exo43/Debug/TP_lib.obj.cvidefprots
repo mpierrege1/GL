@@ -1,0 +1,64 @@
+[calculer_max_2_entiers]
+Class="Function"
+Prototype="long calculer_max_2_entiers(long a, long b);"
+
+[saisir_montant]
+Class="Function"
+Prototype="double saisir_montant();"
+
+[afficher_remise]
+Class="Function"
+Prototype="void afficher_remise(double montant_final, double remise);"
+
+[extraire_un_chiffre]
+Class="Function"
+Prototype="long extraire_un_chiffre(long Nbre, long PositionChiffre);"
+
+[inserer_un_chiffre]
+Class="Function"
+Prototype="long inserer_un_chiffre(long Nbre, long Chiffre, long Position);"
+
+[LancerDe]
+Class="Function"
+Prototype="short LancerDe();"
+
+[essayerCode]
+Class="Function"
+Prototype="int essayerCode(unsigned short code);"
+
+[afficherCodeAcces]
+Class="Function"
+Prototype="void afficherCodeAcces(unsigned short code);"
+
+[lirePortA]
+Class="Function"
+Prototype="unsigned char lirePortA();"
+
+[allumerLed1]
+Class="Function"
+Prototype="void allumerLed1();"
+
+[attendreSec]
+Class="Function"
+Prototype="void attendreSec(long sec);"
+
+[ecrirePortA]
+Class="Function"
+Prototype="void ecrirePortA(unsigned char val);"
+
+[afficherChiffre]
+Class="Function"
+Prototype="void afficherChiffre(short chiffre);"
+
+[testerNombre]
+Class="Function"
+Prototype="int testerNombre(long nombre);"
+
+[afficherNbTentatives]
+Class="Function"
+Prototype="void afficherNbTentatives(long nbTentatives);"
+
+[afficherJour]
+Class="Function"
+Prototype="void afficherJour(unsigned long date, unsigned short jour);"
+

@@ -1,0 +1,1 @@
+-force-include-file "main.c";"f:\GL-Exo43\GL-master\src\main.c" -force-include-file "my_header.h";"f:\GL-Exo43\GL-master\include\my_header.h" -force-include-file "TP_lib.c";"f:\GL-Exo43\GL-master\src\TP_lib.c" -force-include-file "TP_lib.h";"f:\GL-Exo43\GL-master\include\TP_lib.h" 
