@@ -1,0 +1,1 @@
+-force-include-file "cvi_gui.c";"f:\GL-Exo45\GL-master\src\cvi_gui.c" -force-include-file "cvi_gui.h";"f:\GL-Exo45\GL-master\include\cvi_gui.h" -force-include-file "main.c";"f:\GL-Exo45\GL-master\src\main.c" -force-include-file "my_header.h";"f:\GL-Exo45\GL-master\include\my_header.h" 

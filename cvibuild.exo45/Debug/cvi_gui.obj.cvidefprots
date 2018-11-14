@@ -1,0 +1,16 @@
+[GetDouble]
+Class="Function"
+Prototype="double GetDouble(char *message);"
+
+[GetLong]
+Class="Function"
+Prototype="long GetLong(char *message);"
+
+[DisplayLong]
+Class="Function"
+Prototype="void DisplayLong(char *message, long theLong);"
+
+[DisplayDouble]
+Class="Function"
+Prototype="void DisplayDouble(char *message, double theDouble);"
+
