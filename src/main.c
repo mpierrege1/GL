@@ -2,13 +2,13 @@
 //
 
 #include <stdlib.h>
-#include "my_header.h"
+//#include "my_header.h"
 
 
 int main(void)
 {   
-	unsigned long s1 = 0, s2 = 3,s3 = 0, s4 = 0, nmbaleatoire = 0; 
-	unsigned char n = 1,n2 = 1, n3 = 0, n4 = 0, n43 = 1,n47 = 1,s47 = 1, s43 = 1;  
+	unsigned long s1 = 0, s2 = 0,s3 = 0, s4 = 0, nmbaleatoire = 0; 
+	unsigned char n = 1,n2 = 1, n3 = 0, n4 = 0, n5 = 0;
 // Ex 1
 	while (n <11)  // Valeur de while choisi au hasard comme l'énoncer ne le précise pas
 	{
@@ -34,20 +34,17 @@ int main(void)
 // Ex 4 
 	while (n4 <20)
 	{
-	 	 s43 = 3 * n43;
-		 s47 = 7 * n47;
-		 if (s43 <= s47)	//IF utiliser pour ajouter les valeurs dans l'ordre
+		 if ( (n5 % 3) == 0)
 		 {
-			 s4 = s4 + s43;
-			 n43++;
+			 s4 = s4 + n5;
 			 n4++;
 		 }
-		 else				
+		 else if ( (n5 % 7) == 0 )				
 		 {
-			 s4 = s4 + s47;
-			 n47++;
+			 s4 = s4 + n5;
 			 n4++;
 		 } 
+		 n5++;
 	}
   return 0;
 }
