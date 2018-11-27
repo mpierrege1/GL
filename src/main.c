@@ -16,6 +16,9 @@ int main(void)
 	 {
 		user[cptuser] = tirerNumero();	 
 	 }
+	 for(tour=0; tour<100; tour++)    // Bboucle pour les 100 tirage
+	 {
+		 nmbcommun = 0;
 		// Tirage alléatoire du tirage
 	 	initialiserTirage();
 	 	for(cpttirage=0; cpttirage<6; cpttirage++)
@@ -32,8 +35,12 @@ int main(void)
 				{
 			  		nmbcommun++;
 				}	
-	   		}				
-	
+	   		}
 	 	}
+		if (nmbcommun > highscore)
+		{
+			highscore = nmbcommun;	
+		}	
+	}
 	return 0;
 }
