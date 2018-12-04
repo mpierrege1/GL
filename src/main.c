@@ -15,7 +15,7 @@ int main(void)
 	scanf("%s", nom);
 	printf("Inserer votre prenom SVP :"); 
 	scanf("%s", prenom);
-	printf("Insérer votre age SVP :"); 
+	printf("Inserer votre age SVP :"); 
 	scanf("%d", &age);
 	sprintf(phrase,"je m'appelle %s %s et j'ai %d ans", prenom, nom, age);
 	MessagePopup("Bonjour et bienvenue", phrase);
